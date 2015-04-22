@@ -4,5 +4,5 @@ A repository containing all of the papers that I'd be reading under my friend ![
 *22nd April 2015*
 
 1. Mikolov, Tomas, et al. "Efficient estimation of word representations in vector space." arXiv preprint arXiv:1301.3781 (2013).
-<br> ![Progress](http://progressed.io/bar/28?title=read)
+<br> ![Progress](http://progressed.io/bar/28)
 <br> Tags:[NLP], [NN], [Word2Vec]
