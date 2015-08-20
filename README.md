@@ -12,3 +12,7 @@ Week starting *17th Aug 2015*
 1. S. B. Kotsiantis "Supervised Machine Learning: A Review of Classification Techniques". [read()](http://wen.ijs.si/ojs-2.4.3/index.php/informatica/article/download/148/140)
 <br> ![Progress](http://progressed.io/bar/10)
 <br> Tags:[ML] [Review]
+
+2. Berners-Lee, Tim, James Hendler, and Ora Lassila. "The semantic web." Scientific american 284.5 (2001): 28-37. [read()](http://isel2918929391.googlecode.com/svn-history/r347/trunk/RPC/Slides/p01_theSemanticWeb.pdf)
+<br> ![Progress](http://progressed.io/bar/1)
+<br> Tags:[SW]
