@@ -14,10 +14,11 @@ Week starting *17th Aug 2015*
 <br> Tags:[ML] [Review]
 
 2. Berners-Lee, Tim, James Hendler, and Ora Lassila. "The semantic web." Scientific american 284.5 (2001): 28-37. [read()](http://isel2918929391.googlecode.com/svn-history/r347/trunk/RPC/Slides/p01_theSemanticWeb.pdf)
-<br> ![Progress](http://progressed.io/bar/1)
+<br> ![Progress](http://progressed.io/bar/33)
 <br> Notes:
   * hypertext:web::knowledge representation:semantic web
   * godel's theorem means, a compromise must be made, lets err allowing paradoxes.
   * rdf + xml, object = uri
   * conflicts of use of different vocab for meaning the same thing resolved by ontologies. Use inference rules to derive the unstated.
-<br> Tags:[SW]
+
+Tags:[SW]
