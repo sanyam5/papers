@@ -10,5 +10,5 @@ A repository containing all of the papers that I'd be reading under my friend ![
 Week starting *17th Aug 2015*
 
 1. S. B. Kotsiantis "Supervised Machine Learning: A Review of Classification Techniques". [read()](http://wen.ijs.si/ojs-2.4.3/index.php/informatica/article/download/148/140)
-<br> ![Progress](http://progressed.io/bar/1)
-<br> Tags:[ML]
+<br> ![Progress](http://progressed.io/bar/10)
+<br> Tags:[ML] [Review]
