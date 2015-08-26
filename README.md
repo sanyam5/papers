@@ -30,6 +30,8 @@ Week starting *17th Aug 2015*
   * Time-based snchronised **presentaions**
 <br> Tags: [SW]
 
-3. Should Anchors be typed too? An experiment with MacWeb. [read()](dl.acm.org/citation.cfm?id=168767)
+Week starting *24th Aug 2015*
+
+1. Should Anchors be typed too? An experiment with MacWeb. [read()](dl.acm.org/citation.cfm?id=168767)
 <br> ![Progress](http://progressed.io/bar/1)
 Tags: [SW]
