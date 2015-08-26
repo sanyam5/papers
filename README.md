@@ -14,21 +14,21 @@ Week starting *17th Aug 2015*
 <br> Tags:[ML] [Review]
 
 2. Berners-Lee, Tim, James Hendler, and Ora Lassila. "The semantic web." Scientific american 284.5 (2001): 28-37. [read()](http://isel2918929391.googlecode.com/svn-history/r347/trunk/RPC/Slides/p01_theSemanticWeb.pdf)
-<br> ![Progress](http://progressed.io/bar/60)
+<br> ![Progress](http://progressed.io/bar/100)
 <br> Notes:
   * hypertext:web::knowledge representation:semantic web
   * godel's theorem means, a compromise must be made, lets err allowing paradoxes.
   * rdf + xml, object = uri
   * conflicts of use of different vocab for meaning the same thing resolved by ontologies. Use inference rules to derive the unstated.
   * agents make sense of xml and communicate with other agents.
-
-----------------------------------
- 
-* "data transmitted across the Web is largely throw-away data that looks good but has little structure"
-* rdf uses xml to define semantic relations between to resources inckuding other rdfs(reification).
-* DAML+OIL offer a better alternative by removing reification and instead extending rdf-s with "concepts found in frame based languages and description logic". This helps making the schema more sound and removing contradictions.
-* Typed nodes, links and anchors
-Tags: [SW]
+  * "data transmitted across the Web is largely throw-away data that looks good but has little structure"
+  * rdf uses xml to define semantic relations between to resources inckuding other rdfs(reification).
+  * DAML+OIL offer a better alternative by removing reification and instead extending rdf-s with "concepts found in frame based languages and description logic". This helps making the schema more sound and removing contradictions.
+  * Typed nodes, links and anchors
+  * Halasz's 7 issues
+  * Versioning and authentication in a decentralised system.
+  * Time-based snchronised **presentaions**
+<br> Tags: [SW]
 
 3. Should Anchors be typed too? An experiment with MacWeb. [read()](dl.acm.org/citation.cfm?id=168767)
 <br> ![Progress](http://progressed.io/bar/1)
