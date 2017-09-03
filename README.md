@@ -13,3 +13,4 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
 - [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) - NIPS 2013 - [RL]
 - [A Brief Survey of Deep Reinforcement Learning](https://arxiv.org/pdf/1708.05866.pdf) - IEEE 2017 - [RL] [Survey]
 - [Learning to Repeat: Fine Grained Action Repetition for deep reinforcement learning](https://arxiv.org/pdf/1702.06054.pdf) ICLR 2017 - [RL]
+- [Improved Training of Wasserstein GANs](https://arxiv.org/pdf/1704.00028.pdf)
