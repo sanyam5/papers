@@ -28,3 +28,8 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
 - [Representation Learning: A Review and New Perspectives](https://arxiv.org/pdf/1206.5538.pdf) - 2013 - [DL] [Survey]
 - [Show, attend and tell: Neural image caption generation with visual attention](https://arxiv.org/pdf/1502.03044.pdf) - [CV]
 - [A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues](https://arxiv.org/pdf/1605.06069.pdf) - 2016 - [NLP]
+- [Hierarchical multiscale recurrent neural networks](https://arxiv.org/pdf/1609.01704) - 2016 - [RNNs]
+- [Generative Adversarial Nets](https://arxiv.org/pdf/1406.2661.pdf) - 2014 - [GANs]
+- [An actor-critic algorithm for sequence prediction](https://arxiv.org/pdf/1607.07086) - 2016 - [RL]
+- [Unitary evolution recurrent neural networks](http://www.jmlr.org/proceedings/papers/v48/arjovsky16.pdf) - ICML 2016 - [RNNs]
+- [Deconstructing the ladder network architecture](http://www.jmlr.org/proceedings/papers/v48/pezeshki16.html) - ICML 2016 - [DL]
