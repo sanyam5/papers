@@ -19,6 +19,12 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   aka FiGAR. In policy gradient method, instead of just predicting the next action `a` from a set of actions `A` (continuous or discrete) predict a tuple (`a`, `w`) from `A` (actions) and a set of discrete integers `W`. Repeat action `a` for the next `w` time-steps. The intuition is this: in many situations you want to repeat the same action over a long range of time-steps. Decouple the prediction of `a` from `w` prevent the network from blowing up.
   </details>
 
+- [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf) by Ashish Vaswani et. al - 2017 - [DL]
+  <details>
+  <img src="attention-all.JPG"> <img src="attention-all-multi.JPG"> <p> novelty - 10/10. Fixed number of Attend and Analyse steps == number of stacked Transformer units (6 in the paper). Transformer unit: Consists of 1) an encoder layer 2) a decoder layer. Both layers contain a sub layer for attention and a fully connected sub-layer. The decoder contains and addition masking layer for preventing the decoder from seeing current and future token. Multiple smaller attention heads used instead of single big attention head. Positional information of both input and output sequences are fused into the embeddings before feeding it to the first Transformer layer. After that the order input or output tokens doesn't matter until the next Transformer unit. Positional encoding is cleverly designed to support relative indexing for attention. </p>
+  
+  </details>
+
 ## Reading
 - [Learning from Simulated and Unsupervised Images through Adversarial Training](https://arxiv.org/pdf/1612.07828.pdf) - CVPR 2017 - [GANs]
   - Generating original-like synthetic data using GANs
