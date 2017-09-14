@@ -24,7 +24,17 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   <img src="attention-all.JPG"> <img src="attention-all-multi.JPG"> <p> novelty - 10/10. Fixed number of Attend and Analyse steps == number of stacked Transformer units (6 in the paper). Transformer unit: Consists of 1) an encoder layer 2) a decoder layer. Both layers contain a sub layer for attention and a fully connected sub-layer. The decoder contains and addition masking layer for preventing the decoder from seeing current and future token. Multiple smaller attention heads used instead of single big attention head. Positional information of both input and output sequences are fused into the embeddings before feeding it to the first Transformer layer. After that the order input or output tokens doesn't matter until the next Transformer unit. Positional encoding is cleverly designed to support relative indexing for attention. </p>
   
   </details>
-
+  
+- [Residual Algorithms: Reinforcement Learning with Function Approximation](http://www.leemon.com/papers/1995b.pdf) by L. Baird - 1995 - [RL]
+  <details>
+  TD(0) updates guaranteed to converge for table lookup but not for function approximators. Enter, Residual Gradient updates: Define a loss function E over the Bellman residue (RHS-LHS of Bellman eq.). Do gradient descent on w.r.t to E --> Guaranteed to converge but slow. Slow because the updates go both ways (next_state_action <--> this_state_action). Enter, Residual (delta_w_r) updates: Hit a compromise b/w TD(0) (delta_w_d) and Residual Gradient (delta_w_rg).
+  <img src="residual.JPG">
+  
+  Dotted line is the hyperplane perpendicular to the true gradient w.r.t residue (need to stay left of it for robustness). Mustn't go far from TD(0) update (the direction of fast learning). Idea: take projection of TD(0) update w.r.t dotted line, nudge it slightly to the left.
+  
+  </details>
+  
+  
 ## Reading
 - [Learning from Simulated and Unsupervised Images through Adversarial Training](https://arxiv.org/pdf/1612.07828.pdf) - CVPR 2017 - [GANs]
   - Generating original-like synthetic data using GANs
