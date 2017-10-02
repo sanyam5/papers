@@ -40,6 +40,16 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   Dotted line is the hyperplane perpendicular to the true gradient w.r.t residue (need to stay left of it for robustness). Mustn't go far from TD(0) update (the direction of fast learning). Idea: take projection of TD(0) update w.r.t dotted line, nudge it slightly to the left.
   
   </details>
+
+- [Efficient per-example gradient computations](https://arxiv.org/pdf/1510.01799.pdf) by Goodfellow - 2015 - [DL]
+  <details>
+  How to calculate norm of the gradient of each example in a batch? Naive: have N batches of size 1. Better approach to calculate the gradient of loss (which is the sum of errors on all examples in the batch) w.r.t all intermediate activations of all examples in the batch Z. And use this gradient Z-bar to compute norm of per-layer per-example.
+  </details>
+
+- [Differential training of Rollout policies](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.67.2646&rep=rep1&type=pdf) by Bertsekas - 1997 - [RL]
+  <details>
+  Instead of approximating Q(s,a) or V(s) which are prone to noise in the environment and training (two-way flow of information),  approximate G(s,s') = V(s) - V(s') which tells how good is state s w.r.t. to s'. Interestingly standard RL methods can still be applied to approximate G. The states for this problem are (s,s') pairs and the reward is (r - r').
+  </details>
   
   
 ## Reading
@@ -47,6 +57,7 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   - Generating original-like synthetic data using GANs
 
 ## Want to Read
+- [Human-level control through deep reinforcement learning](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf) by Mnih et. al - Nature 2015 - [RL]
 - [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) - NIPS 2013 - [RL]
 - [A Brief Survey of Deep Reinforcement Learning](https://arxiv.org/pdf/1708.05866.pdf) - IEEE 2017 - [RL] [Survey]
 - [Skip-Thought Vectors](http://papers.nips.cc/paper/5950-skip-thought-vectors.pdf) - NIPS 2015 - [NLP]
