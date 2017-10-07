@@ -61,11 +61,15 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   Pre-batch normalization era: How factors such as initialization and non-linearities affect the training using SGD. Good initialization as shown by unsupervised pre-training (training each layer and its transpose to be an autoencoder) plays an important role in quick training. The activation functions should be zero-mean. The best non-linearity is cousin of tanh --> softsign (x/(1+|x|)). The best initializations have zero-mean and unit-variance. 
   </details>
 
+- [Human-level control through deep reinforcement learning](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf) by Mnih et. al - Nature 2015 - [RL]
+  <details>
+  Two extremely simple ideas. 1) Use experience replay - The order in which you provide observations (s, a, r, s`)  matters. If you provide them as they come it makes Q-learning unstable for function approximators because of the correlations b/w subsequent observations. Store observations in a buffer and provide them at random. 2) Use two (instead of one) Q networks. Freeze one and use as it base for evaluating the next state value for improving the second one. After C steps change the weights of the frozen network to be exactly same as the improved network and freeze it again.. loop.
+  </details>
+
 
 ## Reading
 
-- [Human-level control through deep reinforcement learning](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf) by Mnih et. al - Nature 2015 - [RL]
-
+- [A Distributional perspective on Reinforcement Learning](https://arxiv.org/pdf/1707.06887.pdf) by Bellemare et. al - 2017 - [RL]
 
 
 ## Want to Read
