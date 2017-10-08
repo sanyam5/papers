@@ -67,9 +67,15 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   </details>
 
 
+- [A Distributional perspective on Reinforcement Learning](https://arxiv.org/pdf/1707.06887.pdf) by Bellemare et. al - 2017 - [RL]
+  <details>
+  Instead of modelling the expected reward, model a distribution over possible reward values. Stabilises training and capable of modelling intrinsic stochasticity in the environment and in the behaviour of the agent. Define equivalents of Bellman Operator and Bellman Optimality Operators in the distributional sense. They prove the Evaluation setting to be a contraction w.r.t to a particular metric - Wasserstein metrci. The Control setting however is not a contraction in any known metric. But it remains to be seen whether this presents a practical problem or not. 
+  </details>
+  
+
 ## Reading
 
-- [A Distributional perspective on Reinforcement Learning](https://arxiv.org/pdf/1707.06887.pdf) by Bellemare et. al - 2017 - [RL]
+- [Efficient BackProp](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf) by LeCun et. al - 1998 - [DL]
 
 
 ## Want to Read
