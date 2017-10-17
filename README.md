@@ -76,6 +76,7 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
 ## Reading
 
 - [Efficient BackProp](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf) by LeCun et. al - 1998 - [DL]
+- [Human-level concept learning through probabilistic program induction](http://cims.nyu.edu/~brenden/LakeEtAl2015Science.pdf) by Lake et. al - 2015 - [Bayesian]
 
 
 ## Want to Read
