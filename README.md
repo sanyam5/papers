@@ -81,6 +81,7 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
 
 ## Want to Read
 
+- [DRAW: A recurrent neural network for image generation](https://arxiv.org/pdf/1502.04623.pdf) - 2015 - DL
 - [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) - NIPS 2013 - [RL]
 - [A Brief Survey of Deep Reinforcement Learning](https://arxiv.org/pdf/1708.05866.pdf) - IEEE 2017 - [RL] [Survey]
 - [Skip-Thought Vectors](http://papers.nips.cc/paper/5950-skip-thought-vectors.pdf) - NIPS 2015 - [NLP]
