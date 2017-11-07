@@ -71,7 +71,14 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   <details>
   Instead of modelling the expected reward, model a distribution over possible reward values. Stabilises training and capable of modelling intrinsic stochasticity in the environment and in the behaviour of the agent. Define equivalents of Bellman Operator and Bellman Optimality Operators in the distributional sense. They prove the Evaluation setting to be a contraction w.r.t to a particular metric - Wasserstein metrci. The Control setting however is not a contraction in any known metric. But it remains to be seen whether this presents a practical problem or not. 
   </details>
+
+- [VAE: Auto-encoding variational bayes](https://arxiv.org/pdf/1312.6114) by Kingma et. al - 2014 - [Bayesian] [Unsupervised]
+  <details>
+  Understood it through this [Tutorial](https://arxiv.org/pdf/1606.05908.pdf) and  this [blog](https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder). I am yet to fully grasp this from a theoretical side but from a deep learning side I think I understood this. This paper's main contribution to the AutoEncoder framework in my opinion was the fact that they perturbed the latent embeddings and made sure that the Decoder was still able to reconstruct it. But the main flaw is that the loss they use is between pixel to pixel (or dimension to dimenstion) with a complete disregard to the inter-pixel or inter-dimensional dependencies. I think this the primary reason why the generated and reconstructed images are fuzzy. Other recent papers like PixelVAE solve this problem in the image domain by using 5x5  pixelCNN autoregeressive decoder.
   
+- [PixelVAE: A Latent Variable Model for Natural Images](https://arxiv.org/pdf/1611.05013) - By Gulrajani et. al - 2017 - [DL] [VAE]
+  <details>
+  The major contribution on the VAE architecture is that they use teacher forcing in decoder while training using PixelCNN. This frees the latent embedding from having to memorise fine details in images. How do they guarantee that semantic information flows throught the latent space while only the style information is flows through the PixelCNN? They use a 5x5 kernel from which it is impossible to get the big picture (pun, got it?). They are able to generate sharp images through it.
 
 ## Reading
 
