@@ -80,6 +80,10 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   <details>
   The major contribution on the VAE architecture is that they use teacher forcing in decoder while training using PixelCNN. This frees the latent embedding from having to memorise fine details in images. How do they guarantee that semantic information flows throught the latent space while only the style information is flows through the PixelCNN? They use a 5x5 kernel from which it is impossible to get the big picture (pun, got it?). They are able to generate sharp images through it.
 
+- [Skip-Thought Vectors](http://papers.nips.cc/paper/5950-skip-thought-vectors.pdf) - NIPS 2015 - [NLP]
+  <details>
+  Aim to construct semantic embeddings for sentences. Idea: given a sentence in a running text try to predict the previous sentence and the next sentence. Teacher force while predicting. If domain contain huge number of unique words, map them to the latent space of word2vec and then take the nearest neighbour in the small set of words that we want to consider. Test on downstream tasks, may put just one linear layer for adapting sentence embeddings to the task.
+
 ## Reading
 
 - [Efficient BackProp](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf) by LeCun et. al - 1998 - [DL]
@@ -91,7 +95,6 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
 - [DRAW: A recurrent neural network for image generation](https://arxiv.org/pdf/1502.04623.pdf) - 2015 - DL
 - [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) - NIPS 2013 - [RL]
 - [A Brief Survey of Deep Reinforcement Learning](https://arxiv.org/pdf/1708.05866.pdf) - IEEE 2017 - [RL] [Survey]
-- [Skip-Thought Vectors](http://papers.nips.cc/paper/5950-skip-thought-vectors.pdf) - NIPS 2015 - [NLP]
 - [Improved Training of Wasserstein GANs](https://arxiv.org/pdf/1704.00028.pdf) - 2017 - [GANs]
 - [Strategic Attentive Writer for Learning Macro-Actions](https://arxiv.org/pdf/1606.04695.pdf) - NIPS 2016 - [RL]
 - [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](https://arxiv.org/pdf/1703.03864.pdf) - 2017 - [RL]
