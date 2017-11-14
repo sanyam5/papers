@@ -109,3 +109,8 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
 - [An actor-critic algorithm for sequence prediction](https://arxiv.org/pdf/1607.07086) - 2016 - [RL]
 - [Unitary evolution recurrent neural networks](http://www.jmlr.org/proceedings/papers/v48/arjovsky16.pdf) - ICML 2016 - [RNNs]
 - [Deconstructing the ladder network architecture](http://www.jmlr.org/proceedings/papers/v48/pezeshki16.html) - ICML 2016 - [DL]
+- [Backpropagation through the void: Black-box gradient estimation](https://arxiv.org/pdf/1711.00123.pdf) - 2017 - [DL]
+- [LONG SHORT-TERM MEMORY](http://www.bioinf.jku.at/publications/older/2604.pdf) - 1997 - [DL]
+- [Contractive Auto-Encoders: Explicit Invariance During Feature Extraction](http://www.icml-2011.org/papers/455_icmlpaper.pdf) - ICML 2011 - [Unsupervised]
+- [Semi-supervised Learning with Deep Generative Models](https://arxiv.org/pdf/1406.5298.pdf) - 2014 - [Semi-supervised]
+- [Energy based Generative Adversarial Networks](https://arxiv.org/pdf/1609.03126.pdf) - 2017 - [GANs]
