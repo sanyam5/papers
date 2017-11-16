@@ -92,6 +92,7 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
 
 ## Want to Read
 
+- [Neuaral Discrete Representaiton Learning](https://arxiv.org/pdf/1711.00937.pdf) - 2017 - [Unsupervised]
 - [DRAW: A recurrent neural network for image generation](https://arxiv.org/pdf/1502.04623.pdf) - 2015 - DL
 - [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) - NIPS 2013 - [RL]
 - [A Brief Survey of Deep Reinforcement Learning](https://arxiv.org/pdf/1708.05866.pdf) - IEEE 2017 - [RL] [Survey]
