@@ -84,6 +84,9 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   <details>
   Aim to construct semantic embeddings for sentences. Idea: given a sentence in a running text try to predict the previous sentence and the next sentence. Teacher force while predicting. If domain contain huge number of unique words, map them to the latent space of word2vec and then take the nearest neighbour in the small set of words that we want to consider. Test on downstream tasks, may put just one linear layer for adapting sentence embeddings to the task.
 
+- [UNDERSTANDING DEEP LEARNING REQUIRES RETHINKING GENERALIZATION] (https://arxiv.org/pdf/1611.03530.pdf) - By C Zhang et al - 2016 - [DL]
+  <details> Shows that a sufficiently large (with just 2*n+d parameters) network can overfit on a completely random dataset of n d-dimensional points. This shows that Neural Networks generalize well beyond the training dataset even though they have the power to overfit. Overfitting does require more time converge though. Maybe the reason the NNs generalize so well is that reaching generalizing solutions is somehow easier. </details>
+
 ## Reading
 
 - [Efficient BackProp](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf) by LeCun et. al - 1998 - [DL]
