@@ -84,7 +84,7 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   <details>
   Aim to construct semantic embeddings for sentences. Idea: given a sentence in a running text try to predict the previous sentence and the next sentence. Teacher force while predicting. If domain contain huge number of unique words, map them to the latent space of word2vec and then take the nearest neighbour in the small set of words that we want to consider. Test on downstream tasks, may put just one linear layer for adapting sentence embeddings to the task.
 
-- [UNDERSTANDING DEEP LEARNING REQUIRES RETHINKING GENERALIZATION](https://arxiv.org/pdf/1611.03530.pdf) - By C Zhang et al - 2016 - [DL]
+- [Understanding Deep Learning Requires Rethinking Generalization](https://arxiv.org/pdf/1611.03530.pdf) - By C Zhang et al - 2016 - [DL]
   <details> Shows that a sufficiently large (with just 2*n+d parameters) network can overfit on a completely random dataset of n d-dimensional points. This shows that Neural Networks generalize well beyond the training dataset even though they have the power to overfit. Overfitting does require more time converge though. Maybe the reason the NNs generalize so well is that reaching generalizing solutions is somehow easier. </details>
 
 - [Dynamic Routing Between Capsules](https://arxiv.org/pdf/1710.09829.pdf) - By S Sabour et al - 2017 - [DL] [CV]
@@ -92,6 +92,11 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   Building blocks of a NN are vectorized capsules as opposed to scalar neurons. Network formed by layers of capsules. The output of each capsule is a squished vector with a max lenght of 1. Each capsule (a capsule for detecting a nose for example) in the lower layer distributes its output to all capsules (a capsule for detecting the face) in the next layer. The distributed outputs are weighted according to a routing matrix C. The distributed outputs undergo an affine transformation (how is the existence and pose of nose related to the existence and pose of the face) by W matrix of the higher layer. These affine transformations from each of the lower capsules to a higher capsule are then summed together to form the resultant vector for the higher level capsule. The routing matrix C is calculated by the agreement between the affine transformations from the lower layer and the resultant vector. But this is a chicken and egg problem since we don't have the resultant vector without C. Therefore, The matrix C is iteratively (iter=3) calculated from scratch in every forward pass using the agreement (dot-product) b/w the supplied output from a particular lower level capsule and the resultant vector.
   
   I found the idea pretty interesting but I wish there was a more elegant way of calculating the routing matrix. The ad-hoc way of calculating the routing matrix leaves the possibility of instability in training a likely possibility.
+  </details>
+  
+- [Neural Discrete Representation Learning](https://arxiv.org/pdf/1711.00937.pdf) - By A Oord et al - 2017 - [UL]
+  <details>
+  VQ-VAE: Just like an ordinary VAE except that the latent space Z has some K special vectors e1, e2, e3...eK. Encoder computes a continuous z. The special vector e_i nearest to z is passed on to Decoder. e_i is artificially given the gradients of z. But how are these special vectors selected? The special vectors are randomly initialised and then updated at every iteration to minimize the l2 loss between any given z and the special vectors. The special vectors play catch-up. What if the z vectors rush outwards too fast for the special vectors to catch-up. Don't worry we got an l2 loss for that too.   
   </details>
 
 ## Reading
@@ -102,7 +107,6 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
 
 ## Want to Read
 
-- [Neuaral Discrete Representaiton Learning](https://arxiv.org/pdf/1711.00937.pdf) - 2017 - [Unsupervised]
 - [DRAW: A recurrent neural network for image generation](https://arxiv.org/pdf/1502.04623.pdf) - 2015 - DL
 - [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) - NIPS 2013 - [RL]
 - [A Brief Survey of Deep Reinforcement Learning](https://arxiv.org/pdf/1708.05866.pdf) - IEEE 2017 - [RL] [Survey]
