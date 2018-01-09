@@ -96,6 +96,7 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   
 - [Neural Discrete Representation Learning](https://arxiv.org/pdf/1711.00937.pdf) - By A Oord et al - 2017 - [UL]
   <details>
+  How do you train an auto encoder with an autoregressive decoder. How do you ensure that the latent representations learn a global aspect of the input and not some style characteristic of the input. After all, you are just minimising the MSE reconstruction loss. The model is free to choose what information it channels throught the latent representation and what information it channels through the autoregressive mechanism. One solution to this problem is making the latent space K-way categorical for a small and finite K like K=512.
   VQ-VAE: Just like an ordinary VAE except that the latent space Z has some K special vectors e1, e2, e3...eK. Encoder computes a continuous z. The special vector e_i nearest to z is passed on to Decoder. e_i is artificially given the gradients of z. But how are these special vectors selected? The special vectors are randomly initialised and then updated at every iteration to minimize the l2 loss between any given z and the special vectors. The special vectors play catch-up. What if the z vectors rush outwards too fast for the special vectors to catch-up. Don't worry we got an l2 loss for that too.   
   </details>
 
