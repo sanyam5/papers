@@ -100,6 +100,11 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   VQ-VAE: Just like an ordinary VAE except that the latent space Z has some K special vectors e1, e2, e3...eK. Encoder computes a continuous z. The special vector e_i nearest to z is passed on to Decoder. e_i is artificially given the gradients of z. But how are these special vectors selected? The special vectors are randomly initialised and then updated at every iteration to minimize the l2 loss between any given z and the special vectors. The special vectors play catch-up. What if the z vectors rush outwards too fast for the special vectors to catch-up. Don't worry we got an l2 loss for that too.   
   </details>
 
+- [GENERALIZING ACROSS DOMAINS VIA CROSS-GRADIENT TRAINING](https://openreview.net/pdf?id=r1Dx7fbCW) - By Shankar et al. - ICLR 2018 - [Domain Adaptation] [UL]
+<details>
+  [Do not understand some parts, will come back to it later] Awesome paper in my opinion. Assume you have a lot of training data in one domain and a little data for few other domains. How do you train a Neural Net which generalizes to data from a huge number of unseen domains? How can we leverage sparse data from few domains using a lot of data in one domain? Train two neural networks. First, standard, given a sample predicts the class label. Second NN helps in augmenting the data from sparse domains. How? Second NN is trained to predict the **domain** of the input. Augmentation is performed by perturbing the input so as to increase the loss of the second NN. Use the augmented input for training the first network. Interestingly, since the perturbations happen on a real space, the augemented input might not even belong to any of the few domains. It could be mutant domain of the domains under consideration. There is one subtle challenge though that the reader is quite likely to skim over--the perturbations must be such that they only disturb the domain of the input and not its label. I do not fully understand this yet. Will get back to this when I have more time.
+  
+
 ## Reading
 
 - [Efficient BackProp](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf) by LeCun et. al - 1998 - [DL]
