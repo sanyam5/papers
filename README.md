@@ -112,7 +112,7 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
 
 
 ## Want to Read
-- [Spectral Normalization for Generative Adversarial Networks] (https://openreview.net/pdf?id=B1QRgziT-) - ICLR 2018 - [GANs]
+- [Spectral Normalization for Generative Adversarial Networks](https://openreview.net/pdf?id=B1QRgziT-) - ICLR 2018 - [GANs]
 - [A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs](https://openreview.net/pdf?id=B1e5ef-C-) - ICLR 2018 - investigate reasons for linearity.
 - [Emergence of Invariance and Disentanglement in Deep Representations](https://arxiv.org/pdf/1706.01350.pdf) - 2017 - DL
 - [DRAW: A recurrent neural network for image generation](https://arxiv.org/pdf/1502.04623.pdf) - 2015 - DL
