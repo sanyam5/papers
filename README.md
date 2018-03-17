@@ -105,6 +105,12 @@ List of papers I have read, am reading and want to read starting 1st Sept 2017.
   [Do not understand some parts, will come back to it later] Awesome paper in my opinion. Assume you have a lot of training data in one domain and a little data for few other domains. How do you train a Neural Net which generalizes to data from a huge number of unseen domains? How can we leverage sparse data from few domains using a lot of data in one domain? Train two neural networks. First, standard, given a sample predicts the class label. Second NN helps in augmenting the data from sparse domains. How? Second NN is trained to predict the **domain** of the input. Augmentation is performed by perturbing the input so as to increase the loss of the second NN. Use the augmented input for training the first network. Interestingly, since the perturbations happen on a real space, the augemented input might not even belong to any of the few domains. It could be mutant domain of the domains under consideration. There is one subtle challenge though that the reader is quite likely to skim over--the perturbations must be such that they only disturb the domain of the input and not its label. I do not fully understand this yet. Will get back to this when I have more time.
   </details>
 
+- [FiLM: Visual Reasoning with a General Conditioning Layer](https://arxiv.org/pdf/1709.07871.pdf) - By Perez et. al - Dec 2017 - [Information mixing] [DL]
+  <details>
+  A neat way to mix information from two or more diverse parts of a data point X. Normally you'd think that concatenating the latent representations of composing parts of a data point is enough to express the data point. True, but if you want to process the information you need to mix them thoroughly. In this paper, they propose simple affine transformations at each layer of the processing network. Interestingly enough these affine transformations are enough to pass enough enformation from the representation of a question in natural language to the Neural Network pipeline of the corresponding image to produce the right answer to the question.
+ 
+
+
 ## Reading
 
 - [Efficient BackProp](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf) by LeCun et. al - 1998 - [DL]
